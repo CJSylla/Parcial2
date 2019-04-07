@@ -45,9 +45,6 @@
 </@b.base>
 
 <script>
-    <#--document.querySelector("#firstName").value = ${poll.firstName};-->
-    <#--document.querySelector("#lastName").value = ${poll.lastName};-->
-    <#--document.querySelector("#sector").value = ${poll.sector};-->
-    <#--document.querySelector("#education").value = ${poll.education};-->
+
 </script>
 <script src="/js/savePoll.js"></script>

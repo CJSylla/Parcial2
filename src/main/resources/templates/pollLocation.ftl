@@ -17,7 +17,7 @@
     function initMap() {
         var coords = [];
         <#list polls as poll>
-             coords.push( { lat: ${poll.latitude}, lng: ${poll.longitude} } );
+             coords.push( { lat: ${poll.latitude}, lng: ${poll.longitude}, name: `${poll.id }` } );
         </#list>
 
         console.log(coords);
@@ -48,7 +48,17 @@
             position: location,
             map: map
         });
+
+        var infowindow = new google.maps.InfoWindow({
+            content: "Encuesta : "+location.name
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
     }
+
+
 </script>
 
 <script async defer

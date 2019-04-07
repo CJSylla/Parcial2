@@ -28,10 +28,10 @@
                 <div class="col-sm-12">
                     <label for="education"> Nivel Educativo</label>
                     <select class="form-control" id="education" name="education">
-                        <option value="PRIMARY">Educación Primaria</option>
-                        <option value="SECONDARY">Educación Secundaria</option>
+                        <option value="PRIMARY">Educacion Primaria</option>
+                        <option value="SECONDARY">Educacion Secundaria</option>
                         <option value="UNIVERSITY">Universidad</option>
-                        <option value="MASTER">Maestría</option>
+                        <option value="MASTER">Maestria</option>
                         <option value="DOCTORATE">Doctorado</option>
                     </select>
                 </div>
