@@ -49,9 +49,14 @@ dataBase.onerror = function (e) {
 
 function addPoll() {
     var position = JSON.parse(localStorage.getItem('location'));
+
     if ("geolocation" in navigator) {
         if (navigator.onLine) {
-            savePoll(position);
+            if(!position){
+                navigator.geolocation.getCurrentPosition(savePoll);
+            }else {
+                savePoll(position);
+            }
         } else {
             // var position = JSON.parse(localStorage.getItem('location'));
             console.log("Hola ",position);
