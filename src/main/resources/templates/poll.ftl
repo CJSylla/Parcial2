@@ -1,7 +1,7 @@
 <#import "base.ftl" as b>
 
 <@b.base>
-    <div class="card mx-auto limit-width-on-lg-screen">
+    <div class="card mx-auto limit-width-on-lg-screen" style="background-color: #b3d7ff">
         <fieldset class="card-body">
             <div class="form-group row">
                 <label for="firstName" class="col-sm-4 col-form-label"> Nombres</label>
