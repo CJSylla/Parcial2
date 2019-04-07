@@ -53,7 +53,10 @@ function addPoll() {
     if ("geolocation" in navigator) {
         if (navigator.onLine) {
             if(!position){
-                navigator.geolocation.getCurrentPosition(savePoll);
+                var pos = {
+                  "coords":{"latitude":18.486057499999998,"longitude":-69.93121169999999}}
+                }
+                savePoll(pos)
             }else {
                 savePoll(position);
             }
