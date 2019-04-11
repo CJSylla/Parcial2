@@ -2,6 +2,7 @@ body {
     padding-top: 70px; 
     padding-left: 10px;
     padding-right: 10px;
+    background-image: url("https://ariesideas.com/wp-content/uploads/2014/01/slide-2-bg.jpg");
 }
 
 @media (min-width: 520px) {
