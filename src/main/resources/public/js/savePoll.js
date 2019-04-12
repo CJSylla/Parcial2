@@ -50,18 +50,20 @@ dataBase.onerror = function (e) {
 function addPoll() {
     if ("geolocation" in navigator) {
         if (navigator.onLine) {
+            console.log('onlineeeeeeeeeee');
+        } else {
+            console.log('offlineeeeeeeeee');
+        }
+
+        if (navigator.onLine) {
             navigator.geolocation.getCurrentPosition(savePoll);
             // if(!position){
                 // var pos = {
                 //   "coords":{"latitude":18.486057499999998,"longitude":-69.93121169999999}
                 // };
                 // savePoll(pos);
-            }else {
-                var position = JSON.parse(localStorage.getItem('location'));
-                savePoll(position);
-            }
         } else {
-            // var position = JSON.parse(localStorage.getItem('location'));
+            var position = JSON.parse(localStorage.getItem('location'));
             console.log("Hola ",position);
 
             savePoll(position);
